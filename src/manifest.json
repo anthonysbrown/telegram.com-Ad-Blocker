@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+   "name": "Telegram.com Ad Killer",
+  "description": "Kill Telegram.com ads with this extension",  
+  "content_scripts": [
+    {
+      "matches": ["http://www.telegram.com/*"],   
+      "js": ["jquery.js", "popup.js"]
+    }
+  ],
+  "version": "1.0",  
+  "permissions": [
+   "activeTab","http://www.telegram.com/*"
+   ]
+}
